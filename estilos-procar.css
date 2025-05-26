@@ -1,10 +1,10 @@
 @font-face {
 	font-family: "republikaps";
-	src: url("republikaps/Republikaps-Exp-Ultra-Italic.ttf.woff");
+	src: url("Republikaps-Exp-Ultra-Italic.ttf.woff");
 }
 @font-face {
 	font-family: "wishcar";
-	src: url("wishcar/Wishcar-Moundy-BF650d4d9b4f68c.woff")
+	src: url("Wishcar-Moundy-BF650d4d9b4f68c.woff")
 }
 a, span{
 	font-family:"republikaps";
