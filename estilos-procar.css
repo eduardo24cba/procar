@@ -122,7 +122,7 @@ nav img {
 	cursor: pointer;
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 768px) {
 	#quienes_somos span{
 	font-size: 50px;
 	color:#f2f2f2;
