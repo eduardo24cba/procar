@@ -1,0 +1,123 @@
+@font-face {
+	font-family: "republikaps";
+	src: url("republikaps/Republikaps-Exp-Ultra-Italic.ttf.woff");
+}
+@font-face {
+	font-family: "wishcar";
+	src: url("wishcar/Wishcar-Moundy-BF650d4d9b4f68c.woff")
+}
+a, span{
+	font-family:"republikaps";
+}
+
+
+html, body{
+	margin:0;
+	padding: 0;
+	height: 100%;
+}
+.navbar-dark{
+	background: #000 !important;
+	border: none !important;
+	border-width: 0 !important;
+}
+main{
+	background: linear-gradient(145deg, #eb4034, #000) !important;
+}
+
+footer {
+	height: 80px;
+	background: #000;
+	color: #f2f2f2;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+h3, p{
+	color: #f2f2f2;
+}
+
+.navbar, footer{
+	background-color:transparent !important;
+	z-index: 4;
+}
+#col_presentation{
+	padding:0 !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+.presentation{
+	min-width: 100%;
+	min-height: 70%;
+}
+.embed-responsive{
+	height: 100vh;
+}
+.embed-responsive .embed-responsive-item{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+.overlap{
+	background: black;
+	width:100%;
+	height: 100vh;
+	opacity: .8;
+	z-index:2;
+	position:absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+nav img {
+	animation: move 1.5s cubic-bezier(0.68,-0.55,0.27,1.55) both;
+}
+
+@keyframes move {
+	50% {
+		transform: translateX(50%) translateY(50%) scale(1.8) rotate(15deg);
+		
+	}
+	75%{
+		transform: translateX(80%) translateY(80%) scale(2) rotate(-15deg);
+	}
+	100%{
+		transform: translateX(0%) scale(1);
+		
+	}
+	
+}
+
+#contacto span{
+	font-size: 35px;
+	color:silver;
+}
+#quienes_somos{
+	z-index:8;
+}
+#quienes_somos span{
+	font-family: "wishcar" !important;
+	font-size: 50px;
+	color:#f2f2f2;
+}
+.nav-link{
+	cursor: pointer;
+}
