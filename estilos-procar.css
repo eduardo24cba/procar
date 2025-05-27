@@ -6,10 +6,17 @@
 	font-family: "wishcar";
 	src: url("Wishcar-Moundy-BF650d4d9b4f68c.woff")
 }
+@font-face {
+	font-family:"Audrey";
+	src: url("Audrey-NormalOblique.otf")
+}
+@font-face {
+	font-family:"AudreyBold";
+	src: url("Audrey-BoldOblique.otf")
+}
 a, span{
 	font-family:"republikaps";
 }
-
 
 html, body{
 	margin:0;
@@ -21,10 +28,24 @@ html, body{
 	border: none !important;
 	border-width: 0 !important;
 }
+.navbar, footer{
+	background-color:transparent !important;
+	z-index: 4;
+}
+.nav-link{
+	cursor: pointer;
+	color: #f2f2f2 !important;
+}
+.whatsappIcon{
+	position:fixed;
+	right: 30px;
+	bottom: 10px;
+	z-index:10;
+	cursor: pointer;
+}
 main{
 	background: linear-gradient(145deg, #eb4034, #000) !important;
 }
-
 footer {
 	height: 80px;
 	background: #000;
@@ -42,10 +63,6 @@ h3, p{
 	color: #f2f2f2;
 }
 
-.navbar, footer{
-	background-color:transparent !important;
-	z-index: 4;
-}
 #col_presentation{
 	padding:0 !important;
 	position: absolute;
@@ -107,6 +124,7 @@ nav img {
 }
 
 #contacto span{
+	font-family: "AudreyBold";
 	font-size: 12px;
 	color:silver;
 }
@@ -114,18 +132,35 @@ nav img {
 	z-index:8;
 }
 #quienes_somos span{
-	font-family: "wishcar" !important;
-	font-size: 20px;
 	color:#f2f2f2;
 }
-.nav-link{
-	cursor: pointer;
+#title_qs span{
+	font-family: "AudreyBold" !important;
+	font-size: 60px;
+}
+#desc_qs span{
+	font-family: "Audrey" !important;
+	font-size: 20px;
+}
+#contacto div div{
+	animation: move 3s linear infinite;
+}
+
+@keyframes move {
+	0 {
+		transform: rotateY(12deg)
+	}
+	50% {
+		transform: rotateY(-12deg)
+	}
 }
 
 @media (min-width: 768px) {
-	#quienes_somos span{
-	font-size: 50px;
-	color:#f2f2f2;
+	#title_qs span{
+	font-size: 150px;
+	}
+	#desc_qs span{
+		font-size: 40px;
 	}
 	#contacto span{
 	font-size: 35px;
