@@ -146,6 +146,10 @@ nav img {
 	animation: move 3s linear infinite;
 }
 
+nav img {
+	animation: moveLogo 1.5s cubic-bezier(0.68,-0.55,0.27,1.55) both;
+}
+
 @keyframes move {
 	0 {
 		transform: rotateY(12deg)
@@ -154,6 +158,22 @@ nav img {
 		transform: rotateY(-12deg)
 	}
 }
+
+@keyframes moveLogo {
+	50% {
+		transform: translateX(50%) translateY(50%) scale(1.8) rotate(15deg);
+		
+	}
+	75%{
+		transform: translateX(80%) translateY(80%) scale(2) rotate(-15deg);
+	}
+	100%{
+		transform: translateX(0%) scale(1);
+		
+	}
+	
+}
+
 
 @media (min-width: 768px) {
 	#title_qs span{
